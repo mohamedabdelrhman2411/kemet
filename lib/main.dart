@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'generated/assets.dart';
+import 'package:kemet/core/routes/app_router.dart';
 
 void main() {
   runApp(const Kemet());
@@ -10,12 +10,9 @@ class Kemet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Container(
-          child: Image.asset(Assets.imagesOnBoarding1),
-        ),
-      ),
+    return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
+      routerConfig: router,
     );
   }
 }
