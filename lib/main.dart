@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'generated/assets.dart';
 
 void main() {
   runApp(const Kemet());
@@ -9,6 +10,12 @@ class Kemet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          child: Image.asset(Assets.imagesOnBoarding1),
+        ),
+      ),
+    );
   }
 }
